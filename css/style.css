@@ -12,17 +12,10 @@ html, body {
 .name, .handle {
   display: block;
   line-height: 1em;
-}
-
-.name {
   font-weight: 400;
   text-shadow: 0 1px 0 #ffffff;
   letter-spacing: -1px;
-  font-size: 6em
-}
-
-.handle {
-  font-size: 3em;
+  font-size: 6em;
 }
 
 @media (max-width: 568px) {
@@ -70,8 +63,24 @@ nav li {
   font-size: 3em;
 }
 
+.intro {
+  margin-top: 2em;
+  margin-bottom: 3em;
+}
+
 .intro p {
   display: inline;
   font-size: 1.5em;
+  font-weight: 300;
+}
+
+@@media (min-width: 600px) {
+  .intro p {
+    font-size: 2.5em;
+  }
+}
+
+footer p {
+  font-size: 1em;
   font-weight: 300;
 }
