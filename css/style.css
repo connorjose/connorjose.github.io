@@ -88,8 +88,12 @@ nav li {
   font-weight: 300;
 }
 
-.coverletter p {
+.cover p {
   font-size: 1.25em;
+}
+
+.cover a {
+  font-style: italic;
 }
 
 @media (min-width: 600px) {
@@ -97,7 +101,7 @@ nav li {
     font-size: 2.5em;
   }
 
-  .coverletter p {
+  .cover p {
     font-size: 1.5em;
   }
 }
