@@ -1,12 +1,16 @@
 html, body {
   font-family: sans-serif, Arial, Helvetica;
   color: #e7e7e7;
-  background: #536162;
+  background: #959595;
 }
 
 a {
   color: #dbdbdb;
   text-decoration: none;
+}
+
+a:hover {
+  color:none;
 }
 
 header .container {
