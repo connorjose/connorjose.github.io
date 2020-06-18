@@ -3,3 +3,25 @@ html, body {
   color: white;
   background: #536162;
 }
+
+header ul,
+header li {
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.contact a {
+  vertical-align: middle;
+  display: inline-block;
+  text-align: center;
+  padding: 8px
+}
+
+.contact i {
+  display: block;
+}
