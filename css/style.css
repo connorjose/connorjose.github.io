@@ -9,6 +9,10 @@ a {
   text-decoration: none;
 }
 
+header .container {
+  padding-top: 1em;
+}
+
 #id {
   text-align: center;
   display: block;
@@ -17,10 +21,17 @@ a {
 .name, .handle {
   display: block;
   line-height: 1em;
-  font-weight: 300;
-  text-shadow: 0 1px 0 #c2c2c2;
+}
+
+.name {
+  font-weight: 500;
   letter-spacing: -1px;
-  font-size: 1.5em;
+  color: #e7e7e7;
+  font-size: 1em;
+}
+
+.handle {
+  font-size: .6em;
 }
 
 @media (max-width: 568px) {
@@ -34,10 +45,6 @@ a {
     text-align: left;
     display: inline-block;
   }
-}
-
-header .container {
-  padding-top: 1em;
 }
 
 header ul,
