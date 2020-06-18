@@ -10,7 +10,8 @@ a {
 }
 
 a:hover {
-  color:none;
+  color: #cbccc5;
+  text-decoration: none !important;
 }
 
 header .container {
@@ -74,6 +75,7 @@ nav li {
 
 .contact a:hover {
   color: #cbccc5;
+  text-decoration: none !important;
 }
 
 .contact i {
