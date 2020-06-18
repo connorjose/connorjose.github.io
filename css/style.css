@@ -4,6 +4,11 @@ html, body {
   background: #536162;
 }
 
+a {
+  color: #dbdbdb;
+  text-decoration: none;
+}
+
 #id {
   text-align: center;
   display: block;
