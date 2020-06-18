@@ -27,11 +27,12 @@ header .container {
   font-weight: 500;
   letter-spacing: -1px;
   color: #e7e7e7;
-  font-size: 1em;
+  font-size: 1.3em;
+  font-weight: 600;
 }
 
 .handle {
-  font-size: .6em;
+  font-size: 1em;
 }
 
 @media (max-width: 568px) {
