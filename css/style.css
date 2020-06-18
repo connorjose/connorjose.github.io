@@ -4,6 +4,37 @@ html, body {
   background: #536162;
 }
 
+#id {
+  text-align: center;
+  display: block;
+}
+
+.name, .handle {
+  display: block;
+  line-height: 1em;
+}
+
+.name {
+  font-weight: 400;
+  text-shadow: 0 1px 0 #ffffff;
+  letter-spacing: -1px;
+  font-size: 6em
+}
+
+.handle {
+  font-size: 1em;
+}
+
+@media (max-width: 568px) {
+  id {
+    margin-top: 10px;
+  }
+}
+
+header .container {
+  padding-top: 1em;
+}
+
 header ul,
 header li {
   margin: 0;
@@ -23,6 +54,16 @@ nav li {
   color: white;
 }
 
+.contact a:hover {
+  color: #cbccc5;
+}
+
 .contact i {
   display: block;
+}
+
+.intro p {
+  display: inline;
+  font-size: 1.5em;
+  font-weight: 300;
 }
