@@ -22,12 +22,19 @@ html, body {
 }
 
 .handle {
-  font-size: 1em;
+  font-size: 3em;
 }
 
 @media (max-width: 568px) {
-  id {
+  #id {
     margin-top: 10px;
+  }
+}
+
+@@media (min-width: 568px) {
+  #id{
+    text-align: left;
+    display: inline-block;
   }
 }
 
@@ -60,6 +67,7 @@ nav li {
 
 .contact i {
   display: block;
+  font-size: 3em;
 }
 
 .intro p {
