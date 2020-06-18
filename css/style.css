@@ -1,6 +1,6 @@
 html, body {
   font-family: sans-serif, Arial, Helvetica;
-  color: #f6f7f7;
+  color: #e7e7e7;
   background: #536162;
 }
 
@@ -13,7 +13,7 @@ html, body {
   display: block;
   line-height: 1em;
   font-weight: 400;
-  text-shadow: 0 1px 0 #ffffff;
+  text-shadow: 0 1px 0 #c2c2c2;
   letter-spacing: -1px;
   font-size: 1.5em;
 }
