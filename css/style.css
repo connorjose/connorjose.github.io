@@ -1,6 +1,6 @@
 html, body {
   font-family: sans-serif, Arial, Helvetica;
-  color: white;
+  color: #f6f7f7;
   background: #536162;
 }
 
@@ -15,7 +15,7 @@ html, body {
   font-weight: 400;
   text-shadow: 0 1px 0 #ffffff;
   letter-spacing: -1px;
-  font-size: 1.6em;
+  font-size: 1.5em;
 }
 
 @media (max-width: 568px) {
@@ -24,7 +24,7 @@ html, body {
   }
 }
 
-@@media (min-width: 568px) {
+@media (min-width: 568px) {
   #id {
     text-align: left;
     display: inline-block;
@@ -75,7 +75,7 @@ nav li {
   font-weight: 300;
 }
 
-@@media (min-width: 600px) {
+@media (min-width: 600px) {
   .intro p {
     font-size: 2.5em;
   }
