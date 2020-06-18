@@ -88,9 +88,17 @@ nav li {
   font-weight: 300;
 }
 
+.coverletter p {
+  font-size: 1.25em;
+}
+
 @media (min-width: 600px) {
   .intro p {
     font-size: 2.5em;
+  }
+
+  .coverletter p {
+    font-size: 1.5em;
   }
 }
 
