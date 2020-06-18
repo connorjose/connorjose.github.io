@@ -19,7 +19,8 @@ nav li {
   vertical-align: middle;
   display: inline-block;
   text-align: center;
-  padding: 8px
+  padding: 8px;
+  color: white;
 }
 
 .contact i {
