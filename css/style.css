@@ -100,6 +100,11 @@ nav li {
 
 .cover a {
   font-style: italic;
+  text-decoration: underline;
+}
+
+.cover a:hover {
+  color: #cbccc5;
 }
 
 @media (min-width: 600px) {
