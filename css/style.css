@@ -6,6 +6,9 @@ html, body {
 
 body {
   display:flex;
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms--display: flex;
   flex-direction:column;
   min-height:100vh;
 }
