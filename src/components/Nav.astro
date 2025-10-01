@@ -1,4 +1,67 @@
-<header>
-    <a href="/">Me</a>
-    <a href="/blog">Blog</a>
+<header class="header z-50">
+    <!-- Make icon to the left that takes you home -->
+    <div class="logo">
+        <a href="/" title="Connor Brunje ">CB</a>
+    </div>
+
+    <!-- start right side nav -->
+    <nav class="nav">
+        <div class="spacer"></div>
+        <div class="right">
+            <a href="/blog" title="Blog">
+                <div class="i-ri:booklet-line" />
+            </a>
+            <a href="/projects" title="Projects">
+                <div class="i-ri:code-box-line" />
+            </a>
+            <a href="https://github.com/connorjose" title="Github" target="_blank">
+                <div class="i-ri:github-line"/>
+            </a>
+            <a href="https://linkedin.com/in/connor-brunjes-7b6264223" title="Linkedin" target="_blank">
+                <div class="i-ri:linkedin-box-line"/>
+            </a>
+        </div>
+    </nav>
 </header>
+<style>
+    .logo {
+        position: absolute;
+        top: 1.5rem;
+        left: 1.5rem;
+    }
+    .nav {
+        padding: 2em;
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto max-content;
+        box-sizing: border-box;
+    }
+
+    .nav > * {
+        margin: auto;
+    }
+
+    .nav a {
+        cursor: pointer;
+        text-decoration: none;
+        color: inherit;
+        transition: opacity 0.2s ease;
+        opacity: 0.6;
+        outline: none;
+    }
+
+    .nav a:hover {
+        opacity: 1;
+        text-decoration-color: inherit;
+    }
+
+    .nav .right {
+        display: grid;
+        gap: 1.2rem;
+        grid-auto-flow: column;
+    }
+
+    .nav .right > * {
+        margin: auto;
+    }
+</style>
