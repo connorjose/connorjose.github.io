@@ -4,7 +4,14 @@ export default defineConfig({
     presets: [
         presetWind3(),
         presetAttributify(),
-        presetIcons(),
+        presetIcons({
+            extraProperties: {
+                'display': 'inline-block',
+                'height': '1.2rem',
+                'width': '1.2rem',
+                'vertical-align': 'text-bottom'
+            }
+        }),
         presetTypography()
     ],
 })
