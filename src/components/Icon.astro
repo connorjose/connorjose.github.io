@@ -1,0 +1,15 @@
+---
+// Usage <Icon url="https://github.com" name="Github" />
+const { url, icon, name } = Astro.props;
+---
+<a
+  href={url}
+  target="_blank"
+  rel="noopener noreferrer"
+  class="inline-flex items-center gap-1 border-b border-current hover:opacity-80 no-underline"
+>
+  <span class={icon}></span>
+  <span>{name}</span>
+</a>
+<style>
+</style>
