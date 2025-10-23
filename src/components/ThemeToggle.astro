@@ -1,0 +1,62 @@
+---
+---
+<button toggle-theme-button class="select-none" title="Toggle theme">
+    <div i-ri-sun-line dark:i-ri-moon-line></div>
+</button>
+<script>
+const root = document.documentElement;
+
+function applyTheme(isDark: boolean) {
+    if (isDark) root.classList.add('dark');
+    else root.classList.remove('dark');
+}
+
+function toggleDark()  {
+    const next = !root.classList.contains('dark');
+    const doToggle = () => {
+        applyTheme(next)
+    }
+    document.startViewTransition(doToggle)
+}
+
+const buttons = document.querySelectorAll('[toggle-theme-button]');
+buttons.forEach((button) => {
+    button.addEventListener('click', () => toggleDark());
+})
+
+</script>
+<style>
+    button {
+        cursor: pointer;
+        text-decoration: none;
+        color: inherit;
+        transition: opacity 0.2s ease;
+        opacity: 0.6;
+        outline: none;
+    }
+
+    button:hover {
+        opacity: 1;
+        text-decoration-color: inherit;
+    }
+
+     @supports (view-transition-name: root) {
+      ::view-transition-old(root) {
+        animation: none;
+      }
+
+      ::view-transition-new(root) {
+        animation: circle-expand 0.4s ease-out;
+        transform-origin: center;
+      }
+
+      @keyframes circle-expand {
+        from {
+          clip-path: circle(0% at center);
+        }
+        to {
+          clip-path: circle(150% at center);
+        }
+      }
+    }
+</style>
