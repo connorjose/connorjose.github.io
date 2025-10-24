@@ -1,5 +1,6 @@
 ---
 import Nav from "../components/Nav.astro"
+import '../styles/global.css'
 ---
 <!doctype html>
 <html lang="en">
@@ -10,7 +11,7 @@ import Nav from "../components/Nav.astro"
 		<meta name="generator" content={Astro.generator} />
 		<title>Connor Brunjes</title>
 	</head>
-	<body class="bg-base color-base">
+	<body class="color-base">
 		<Nav></Nav>
 		<main class="px-7 py-10">
 			<slot />
