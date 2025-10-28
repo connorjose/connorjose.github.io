@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.7",
-    "astro": "^5.13.5"
+    "astro": "^5.15.2"
   },
   "devDependencies": {
     "@iconify/json": "^2.2.390",
