@@ -1,0 +1,15 @@
+name: Build development branch
+on:
+  push:
+    branches-ignore:
+      - master
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout out repo
+        uses: actions/checkout@v4
+      - name: Build with astro
+        uses: withastro/action@v3
