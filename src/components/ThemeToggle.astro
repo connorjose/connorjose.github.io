@@ -3,13 +3,12 @@
 <button toggle-theme-button class="select-none" title="Toggle theme">
   <div i-ri-sun-line dark:i-ri-moon-line></div>
 </button>
-
 <script is:inline>
 const root = document.documentElement;
-// TODO: grab and store users theme from localStorage or user preferences for browser
 
 function applyTheme(isDark) {
   root.classList.toggle('dark', isDark);
+  localStorage.setItem('theme', isDark ? 'dark' : 'light');
 }
 
 function toggleDark(button) {
