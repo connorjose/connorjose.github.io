@@ -16,7 +16,7 @@ jobs:
       - name: Checkout checkout repo
         uses: actions/checkout@v4
       - name: Build with astro
-        uses: withastro/action@v3
+        uses: withastro/action@v6
         with:
           node-version: 22
 
