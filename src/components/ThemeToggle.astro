@@ -13,7 +13,7 @@ function applyTheme(isDark) {
 
 function toggleDark(button) {
   const apperanceTransition = document.startViewTransition 
-    && !(window.matchMedia('(prefers-reduced-motion: reduce')).matches;
+    && !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   const rect = button.getBoundingClientRect();
   const x = rect.left + rect.width / 2;
@@ -24,7 +24,7 @@ function toggleDark(button) {
   const next = !root.classList.contains('dark');
 
   const doToggle = () => applyTheme(next);
-  if (!apperanceTransition) doToggle();
+  if (!apperanceTransition) return doToggle();
 
   const transition = document.startViewTransition(() => {
     doToggle();
@@ -61,7 +61,6 @@ button {
   cursor: pointer;
   transition: opacity 0.2s ease;
   opacity: 0.6;
-  outline: none;
 }
 button:hover {
   opacity: 1;
